@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slika, Tekst i Video</title>
+    <style>
+        .container {
+            display: flex; /* Koristi flexbox za poravnavanje */
+            justify-content: flex-start; /* Poravnanje sadržaja na lijevo */
+            align-items: center; /* Poravnanje slika i teksta vertikalno */
+        }
+        .slika {
+            width: 40%; /* Širina slike je 40% */
+            margin-right: 1%; /* Razmak između slike i teksta */
+        }
+        .tekst {
+            width: 59%; /* Širina teksta je 59% */
+        }
+        video {
+            display: block; /* Video je blok element */
+            margin-top: 10px; /* Razmak od teksta iznad videa */
+            width: 100%; /* Video širina je 100% kontejnera */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="slika" src="https://via.placeholder.com/400x200" alt="Slika">
+
+        <div class="tekst">
+            <h2>Ovo je naslov teksta</h2>
+            <p>Ovdje ide tekst koji će biti smješten s desne strane slike. Tekst može biti bilo koja informacija koju želite prikazati.</p>
+        </div>
+    </div>
+
+    <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Vaš preglednik ne podržava video element.
+    </video>
+</body>
+</html>
